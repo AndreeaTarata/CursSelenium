@@ -1,6 +1,9 @@
 package Curs13;
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -17,7 +20,14 @@ public class TestSelenium {
 		driver.get("http://keybooks.ro");
 		
 		driver.findElement(By.linkText("Login")).click();
+		//driver.findElement(By.id("log")).isDisplayed();
+		//driver.findElement(By.id("log")).sendKeys("TestUser");
 		
+		WebElement username = driver.findElement(By.id("log"));
+		username.isDisplayed();
+		username.sendKeys("TestUser");
+		
+		assertTrue(username.isDisplayed());
 		//driver.quit();
 		
 	}
