@@ -82,7 +82,7 @@ public class SeleniumLocator extends BaseTest{
 		
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void cssSelector() {
 		
 		WebElement nameTextBox = driver.findElement(By.cssSelector("input[name = 'author']"));
@@ -90,6 +90,12 @@ public class SeleniumLocator extends BaseTest{
 		
 		
 	}
+	@Test(priority = 8)
+	public void xpathSelector() {
+		
+		WebElement emailTexBox = driver.findElement(By.xpath("//input[@type='email']"));
+		emailTexBox.sendKeys("test@test.com");
 	
 	
+	}
 }
