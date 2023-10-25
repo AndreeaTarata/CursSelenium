@@ -26,4 +26,5 @@ public class BaseTest {
 		//driver.close(); // inchide tabul curent
 		
 	}
+	
 }
