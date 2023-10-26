@@ -8,6 +8,7 @@ public class BaseTest {
 	
 	private static final String Thred = null;
 	public WebDriver driver;
+	public BasePage app;
 	
 	@BeforeClass
 	public void setup() {
@@ -16,6 +17,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.get("https://keybooks.ro");
 		
+		app = new BasePage(driver);
 	}
 
 	@AfterClass
