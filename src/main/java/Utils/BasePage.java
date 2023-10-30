@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import pages.AuthorPage;
 import pages.BookPage;
+import pages.ContactPage;
 import pages.LoginPage;
 import pages.MenuPage;
 import pages.ShopPage;
@@ -22,6 +23,6 @@ public class BasePage extends SeleniumWrappers {
 	public BookPage bookPage = new BookPage(driver);
 	public AuthorPage authorPage = new AuthorPage(driver);
 	public ShopPage shopPage = new ShopPage(driver);
-	
+	public ContactPage contact = new ContactPage(driver);
 
 }
