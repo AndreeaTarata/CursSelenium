@@ -21,5 +21,4 @@ public class FindElementsExample extends BaseTest{
 		books.get(2).click();
 		
 	}
-
 }

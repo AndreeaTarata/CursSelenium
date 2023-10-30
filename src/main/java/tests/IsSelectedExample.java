@@ -21,8 +21,8 @@ public class IsSelectedExample extends BaseTest{
 		
 		app.menu.navigateTo(app.menu.loginLink);
 		
-		app.returnWebElement(app.login.checkBoxSelector).click();
-		assertTrue(app.returnWebElement(app.login.checkBoxSelector).isSelected());
+		app.simpleReturnWebElement(app.login.checkBoxSelector).click();
+		assertTrue(app.simpleReturnWebElement(app.login.checkBoxSelector).isSelected());
 		//inlocuieste cele 2 linii de mai jos
 		/*MenuPage menu = new MenuPage(driver);
 		menu.navigateTo(menu.loginLink);
