@@ -26,10 +26,11 @@ public WebDriver driver;
 		driver.findElement(usernameField).sendKeys(user);
 		driver.findElement(passField).sendKeys(pass);
 		driver.findElement(submitButton).click();
-		
-		
+	}	
+	
+	
 
-	}
+	
 	
 	public boolean checkLoginMsgIsDispayed(By locator) {
 		return driver.findElement(locator).isDisplayed();
