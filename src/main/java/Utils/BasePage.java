@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import pages.AuthorPage;
 import pages.BookPage;
 import pages.ContactPage;
+import pages.EventPage;
+import pages.GenericEventPage;
 import pages.LoginPage;
 import pages.MenuPage;
 import pages.ShippingAdress;
@@ -25,4 +27,7 @@ public class BasePage extends SeleniumWrappers {
 	public ShopPage shopPage = new ShopPage(driver);
 	public ContactPage contact = new ContactPage(driver);
 	public ShippingAdress shippingAdress = new ShippingAdress(driver);
+	public EventPage events = new EventPage(driver);
+	public GenericEventPage genericEvent = new GenericEventPage(driver);
+	
 }
