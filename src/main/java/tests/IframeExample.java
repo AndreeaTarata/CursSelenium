@@ -9,6 +9,8 @@ public class IframeExample extends BaseTest{
 	public void iFrameTest() {
 		app.click(app.menu.contactsLink);
 		app.contact.zoomMap(app.contact.zoomInButton);
+		driver.switchTo().defaultContent();
+		app.returnWebElement(app.contact.nameField).sendKeys("Text");
 	}
 	
 

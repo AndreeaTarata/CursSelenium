@@ -18,7 +18,7 @@ public class MenuPage {
 	public By singleAuthor = By.cssSelector("a[href='/margaret-robins/']");
 	public By home = By.cssSelector("a[href='https://keybooks.ro/home-3/']");
 	public By shopLink = By.linkText("BOOKS");
-	
+	public By evetsLink = By.linkText("EVENTS");
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
 		
