@@ -47,5 +47,8 @@ public class SeleniumWrappers extends BaseTest {
 	js.executeScript("window.scrollBy(0," +x+ ")");
 
 }
+	public boolean isDispayed(By locator) {
+		return driver.findElement(locator).isDisplayed();
+	}
 	
 }

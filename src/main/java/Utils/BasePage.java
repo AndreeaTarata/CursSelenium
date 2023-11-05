@@ -3,6 +3,7 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 
 import pages.AuthorPage;
+import pages.BookDetailsDisplayed;
 import pages.BookPage;
 import pages.ContactPage;
 import pages.EventPage;
@@ -11,6 +12,7 @@ import pages.LoginPage;
 import pages.MenuPage;
 import pages.ShippingAdress;
 import pages.ShopPage;
+import pages.SocialMediaLinks;
 
 public class BasePage extends SeleniumWrappers {
 
@@ -29,5 +31,6 @@ public class BasePage extends SeleniumWrappers {
 	public ShippingAdress shippingAdress = new ShippingAdress(driver);
 	public EventPage events = new EventPage(driver);
 	public GenericEventPage genericEvent = new GenericEventPage(driver);
-	
+	public BookDetailsDisplayed bookDetailsDisplayed = new BookDetailsDisplayed(driver);
+	public SocialMediaLinks socialMediaLinks = new SocialMediaLinks(driver);
 }
