@@ -19,6 +19,7 @@ public class MenuPage {
 	public By home = By.cssSelector("a[href='https://keybooks.ro/home-3/']");
 	public By shopLink = By.linkText("BOOKS");
 	public By evetsLink = By.linkText("EVENTS");
+	public By blog = By.linkText("BLOG");
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();

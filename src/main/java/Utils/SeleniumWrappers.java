@@ -50,5 +50,5 @@ public class SeleniumWrappers extends BaseTest {
 	public boolean isDispayed(By locator) {
 		return driver.findElement(locator).isDisplayed();
 	}
-	
+
 }

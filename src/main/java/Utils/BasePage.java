@@ -3,6 +3,7 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 
 import pages.AuthorPage;
+import pages.BlogPage;
 import pages.BookDetailsDisplayed;
 import pages.BookPage;
 import pages.ContactPage;
@@ -33,4 +34,5 @@ public class BasePage extends SeleniumWrappers {
 	public GenericEventPage genericEvent = new GenericEventPage(driver);
 	public BookDetailsDisplayed bookDetailsDisplayed = new BookDetailsDisplayed(driver);
 	public SocialMediaLinks socialMediaLinks = new SocialMediaLinks(driver);
+	public BlogPage blogPage = new BlogPage(driver);
 }
