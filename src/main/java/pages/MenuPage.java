@@ -22,6 +22,8 @@ public class MenuPage {
 	public By blog = By.linkText("BLOG");
 	public By aboutLink = By.linkText("ABOUT");
 	public By signUpButton = By.cssSelector("input[value='Sign up']");
+	public By searchIcon = By.xpath("(//button[contains(@class, 'icon-search')])[1]");
+	public By searchInput = By.xpath("(//input[contains(@class,'search_field')])[1]");
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
 		
