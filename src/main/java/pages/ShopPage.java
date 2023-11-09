@@ -1,5 +1,7 @@
 package pages;
 
+import javax.swing.text.html.CSS;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -14,6 +16,9 @@ public class ShopPage extends SeleniumWrappers {
 	}
 
 	public By orderDropDown = By.name("orderby");
+	public By sliderInitialPosition = By.cssSelector("span[style='left: 0%;']");
+	public By sliderFinalPosition = By.cssSelector("span[style='left: 100%;']");
+	
 
 	public void filterByValue(String value) {
 
