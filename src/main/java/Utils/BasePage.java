@@ -7,6 +7,7 @@ import pages.BlogPage;
 import pages.BookDetailsDisplayed;
 import pages.BookPage;
 import pages.ContactPage;
+import pages.DragAndDropHomeworkBlogPage;
 import pages.EventPage;
 import pages.GenericEventPage;
 import pages.LoginPage;
@@ -35,4 +36,5 @@ public class BasePage extends SeleniumWrappers {
 	public BookDetailsDisplayed bookDetailsDisplayed = new BookDetailsDisplayed(driver);
 	public SocialMediaLinks socialMediaLinks = new SocialMediaLinks(driver);
 	public BlogPage blogPage = new BlogPage(driver);
+	public DragAndDropHomeworkBlogPage dragAndDropBlogPage = new DragAndDropHomeworkBlogPage(driver);
 }
