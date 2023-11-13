@@ -14,7 +14,7 @@ public class LocatoriRelativi extends BaseTest {
 	 * toLeftOf toRightOf below above near
 	 */
 
-	@Test
+	@Test(groups = "ProductFunctionality")
 	public void locatoriRelativi() {
 		// to left of
 		WebElement price = driver.findElement(RelativeLocator.with(By.xpath("//h5[contains(@class, 'sc_title')]"))

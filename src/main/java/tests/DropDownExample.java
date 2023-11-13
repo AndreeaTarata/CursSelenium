@@ -11,7 +11,7 @@ import Utils.BaseTest;
 
 public class DropDownExample extends BaseTest {
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "ProductFunctionality")
 
 	public void selectByValueTest() {
 		app.click(app.menu.shopLink);
@@ -21,7 +21,7 @@ public class DropDownExample extends BaseTest {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = "ProductFunctionality")
 	public void selectByTextTest() {
 		app.click(app.menu.shopLink);
 		app.shopPage.filterByVisibleText("Sort by average rating");
@@ -29,14 +29,14 @@ public class DropDownExample extends BaseTest {
 		assertEquals(app.shopPage.getCurrentSelectedOption(), "Sort by average rating");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = "ProductFunctionality")
 	public void selectByIndexTest() {
 		app.click(app.menu.shopLink);
 		app.shopPage.filterByIndex(4);
 		assertEquals(app.shopPage.getCurrentSelectedOption(), "Sort by price: low to high");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void example() throws InterruptedException {
 		
 		app.click(app.menu.shopLink);
