@@ -17,6 +17,9 @@ public class DragAndDropHomeworkBlogPage extends SeleniumWrappers{
 		public By playButton = By.xpath("//div[@class='mejs-button mejs-playpause-button mejs-play']");
 		public By soundButton = By.xpath("(//button[@type='button'])[2]");
 		public By playHandle = By.xpath("//span[@class='mejs-time-handle']");
-		public By soundHandle = By.xpath("//div[@class='mejs-horizontal-volume-current']");
+		public By soundHandle = By.xpath("//span[@class='mejs-time-current']");
 		
 }
+// "span[class="
+//+ "'mejs-time-total mejs-time-slider']");
+//}

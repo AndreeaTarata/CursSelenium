@@ -16,7 +16,7 @@ public class MusicHandleHomework extends BaseTest{
 			app.click(app.dragAndDropBlogPage.audioPost);
 			app.click(app.dragAndDropBlogPage.playButton);
 			Thread.sleep(5000);
-			app.dragAndDrop(app.dragAndDropBlogPage.playHandle, 500, 0);
+			app.dragAndDrop(app.dragAndDropBlogPage.soundHandle, 500, 0);
 			//app.click(app.dragAndDropBlogPage.soundButton);
 			app.dragAndDrop(app.dragAndDropBlogPage.soundButton, 10, 0);
 			Thread.sleep(9000);
