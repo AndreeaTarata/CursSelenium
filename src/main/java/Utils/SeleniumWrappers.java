@@ -1,6 +1,8 @@
 package Utils;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.TestException;
 
 public class SeleniumWrappers extends BaseTest {
 
@@ -33,7 +36,7 @@ public class SeleniumWrappers extends BaseTest {
 
 	public void waitForElementToBeVisible(By locator) {
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
@@ -83,5 +86,28 @@ public class SeleniumWrappers extends BaseTest {
 	
 	public void scrollToElement() {
 		
+	}
+	public void windowHandle() {
+		
+		//System.out.println("Current window before click: " + driver.getWindowHandle());
+		//System.out.println("All windows:" + driver.getWindowHandles());
+		
+		List<String> browserTabs = new ArrayList<>(driver.getWindowHandles());
+		driver.switchTo().window(browserTabs.get(1));
+		//System.out.println("Current window after switch on: " + driver.getWindowHandle());
+		driver.close();
+		driver.switchTo().window(browserTabs.get(0));
+	
+	}
+	public void waitForTheElementToBeClickable(By locator) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+			
+		}catch(Exception e) {
+			//Log.error(e.getMessage());
+			throw new TestException("Element not found in <waitForTheElementToBeClickable> after 10 seconds");
+			
+		}
 	}
 }

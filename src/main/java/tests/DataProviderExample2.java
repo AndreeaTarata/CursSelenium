@@ -43,6 +43,7 @@ public class DataProviderExample2 extends BaseTest {
 			assertTrue(app.login.checkLoginMsgIsDispayed(app.login.succesMessage));
 			app.click(app.login.logoutButton);
 			
+			
 		}else if(!sucess){
 			assertTrue(app.login.checkLoginMsgIsDispayed(app.login.errorLoginMsg));
 			app.click(app.login.closeLoginPopun);
@@ -50,6 +51,7 @@ public class DataProviderExample2 extends BaseTest {
 		//pe unde facem sendkeys trebuie sa facem clear pt ca e ca o iteratie
 		
 	}
+
 	
 
 }

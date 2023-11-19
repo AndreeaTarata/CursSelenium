@@ -33,9 +33,6 @@ public WebDriver driver;
 	}	
 	
 	
-
-	
-	
 	public boolean checkLoginMsgIsDispayed(By locator) {
 		return driver.findElement(locator).isDisplayed();
 	}

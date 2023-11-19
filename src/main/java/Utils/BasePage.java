@@ -12,6 +12,7 @@ import pages.EventPage;
 import pages.GenericEventPage;
 import pages.LoginPage;
 import pages.MenuPage;
+import pages.RomanBooks;
 import pages.ShippingAdress;
 import pages.ShopPage;
 import pages.SocialMediaLinks;
@@ -37,4 +38,5 @@ public class BasePage extends SeleniumWrappers {
 	public SocialMediaLinks socialMediaLinks = new SocialMediaLinks(driver);
 	public BlogPage blogPage = new BlogPage(driver);
 	public DragAndDropHomeworkBlogPage dragAndDropBlogPage = new DragAndDropHomeworkBlogPage(driver);
+	public RomanBooks romanBooks = new RomanBooks(driver);
 }
